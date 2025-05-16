@@ -1,8 +1,10 @@
 import cv2
 import os
+from pathlib import Path
+
 
 SIGN_CLASS = 'A' # MUST BE CHANGED FOR EACH SIGN
-SAVE_DIR = f'data/fingerspellings{SIGN_CLASS}/'
+SAVE_DIR = f'data/fingerspellings/{SIGN_CLASS}/'
 
 
 if not os.path.exists(SAVE_DIR):
